@@ -25,7 +25,7 @@ const createListImage = (images) => {
 
 const listImage = images.map(createListImage).join("");
 const galleryEl = document.querySelector(".gallery");
-console.log(galleryEl);
+
 galleryEl.style.display = "flex";
 galleryEl.style.listStyle = "none";
 
@@ -34,9 +34,10 @@ galleryEl.insertAdjacentHTML("afterbegin", listImage);
 const elements = document.querySelectorAll(".gallery__image");
 
 const addListStyle = () => {
-  return document.querySelectorAll(".gallery__image").forEach((element) => {
-    element.style.maxWidth = "400px";
+  return elements.forEach((element) => {
+    element.style.maxWidth = "320px";
     element.style.height = "100%";
+    element.style.marginRight = "12px";
   });
 };
 

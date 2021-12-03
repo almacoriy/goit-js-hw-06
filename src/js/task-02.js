@@ -19,6 +19,5 @@ const createListElement = (options) => {
   });
 };
 
-// console.log(ingredientsEl);
 const elements = createListElement(ingredients);
 ingredientsEl.append(...elements);

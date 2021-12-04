@@ -15,6 +15,8 @@ let sizeDiv = 30;
 refs.input.addEventListener("input", onInputChange);
 refs.buttonCreate.addEventListener("click", () => createBoxes(amount));
 refs.buttonDestroy.addEventListener("click", () => destroyBoxes());
+refs.div.style.display = "flex";
+refs.div.style.flexWrap = "wrap";
 
 function onInputChange() {
   amount = refs.input.value;
@@ -25,8 +27,6 @@ function createBoxes(amount) {
     const element = document.createElement("div");
     sizeDiv = sizeDiv + 10;
 
-    refs.div.style.display = "flex";
-    refs.div.style.flexWrap = "wrap";
     element.style.marginTop = "30px";
     element.style.marginRight = "10px";
     element.style.width = sizeDiv + "px";

@@ -21,7 +21,7 @@ function onInputChange() {
 }
 
 function createBoxes(amount) {
-  for (let i = 0; i < amount; i += 1) {
+  for (let i = 1; i <= amount; i += 1) {
     const element = document.createElement("div");
     sizeDiv = sizeDiv + 10;
 

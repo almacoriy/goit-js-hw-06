@@ -26,12 +26,12 @@ function createBoxes(amount) {
     sizeDiv = sizeDiv + 10;
 
     refs.div.style.display = "flex";
+    refs.div.style.flexWrap = "wrap";
     element.style.marginTop = "30px";
     element.style.marginRight = "10px";
     element.style.width = sizeDiv + "px";
     element.style.height = sizeDiv + "px";
     element.style.backgroundColor = getRandomHexColor();
-
     refs.div.append(element);
   }
 }

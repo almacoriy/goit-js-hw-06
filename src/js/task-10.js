@@ -40,4 +40,5 @@ function destroyBoxes() {
   refs.div.innerHTML = "";
   refs.input.value = "";
   sizeDiv = 30;
+  amount = 0;
 }
